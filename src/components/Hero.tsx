@@ -2,11 +2,10 @@
  * @Author: Cqs 18897653566@163.com
  * @Date: 2026-08-12 15:02:39
  * @LastEditors: Cqs 18897653566@163.com
- * @LastEditTime: 2026-08-12 20:33:44
+ * @LastEditTime: 2026-08-12 21:19:05
  * @Description: 首页区块：大标题 + 简介 + 头像
  * Copyright (c) 2026 by 18897653566@163.com All Rights Reserved. 
  */
-import { imageUrl } from '../lib/image'
 
 // 首页区块：大标题 + 简介 + 头像
 export function Hero() {
