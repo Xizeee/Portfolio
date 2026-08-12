@@ -23,10 +23,10 @@ export function Projects() {
           {projects.map((project) => (
             <article
               key={project.id}
-              className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/20 transition-colors"
+              className="group rounded-2xl overflow-hidden bg-foreground/5 border border-foreground/10 hover:border-foreground/20 transition-colors"
             >
               {/* 项目截图（懒加载） */}
-              <div className="aspect-video overflow-hidden">
+              <div className="aspect-video overflow-hidden bg-surface">
                 <img
                   src={project.image}
                   alt={project.name}
@@ -37,8 +37,8 @@ export function Projects() {
 
               {/* 内容区 */}
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-white">{project.name}</h3>
-                <p className="text-white/60 text-sm leading-relaxed mb-4">
+                <h3 className="text-xl font-semibold mb-2 text-foreground">{project.name}</h3>
+                <p className="text-foreground/60 text-sm leading-relaxed mb-4">
                   {project.description}
                 </p>
 
@@ -47,7 +47,7 @@ export function Projects() {
                   {project.techStack.map((tech) => (
                     <li
                       key={tech}
-                      className="px-2.5 py-1 rounded-full text-xs bg-indigo-500/10 text-indigo-300 border border-indigo-500/20"
+                      className="px-2.5 py-1 rounded-full text-xs bg-indigo-500/10 text-indigo-400 border border-indigo-500/20"
                     >
                       {tech}
                     </li>
@@ -59,7 +59,7 @@ export function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-sm text-white/80 hover:text-white transition-colors"
+                  className="inline-flex items-center gap-1 text-sm text-foreground/80 hover:text-foreground transition-colors"
                 >
                   查看项目
                   <span aria-hidden="true">→</span>

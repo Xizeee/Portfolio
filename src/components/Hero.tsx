@@ -2,9 +2,9 @@
  * @Author: Cqs 18897653566@163.com
  * @Date: 2026-08-12 15:02:39
  * @LastEditors: Cqs 18897653566@163.com
- * @LastEditTime: 2026-08-12 21:19:05
+ * @LastEditTime: 2026-08-12 21:39:47
  * @Description: 首页区块：大标题 + 简介 + 头像
- * Copyright (c) 2026 by 18897653566@163.com All Rights Reserved. 
+ * Copyright (c) 2026 by 18897653566@163.com All Rights Reserved.
  */
 
 // 首页区块：大标题 + 简介 + 头像
@@ -26,7 +26,7 @@ export function Hero() {
           src="https://picgocloud.com/m/121070ac-9c3c-4f9c-b235-233cafaeb691.jpg"
           alt="头像"
           loading="lazy"
-          className="w-36 h-36 rounded-full object-cover ring-2 ring-white/20 shadow-xl"
+          className="w-36 h-36 rounded-full object-cover ring-2 ring-foreground/20 shadow-xl"
         />
 
         {/* 大标题（渐变色） */}
@@ -35,7 +35,7 @@ export function Hero() {
         </h1>
 
         {/* 简介 */}
-        <p className="max-w-xl text-white/70 text-lg leading-relaxed">
+        <p className="max-w-xl text-foreground/70 text-lg leading-relaxed">
           一名全栈工程师，热衷于用代码构建简洁、高效、优雅的产品。专注于前端工程与用户体验。
         </p>
 
@@ -49,7 +49,7 @@ export function Hero() {
           </a>
           <a
             href="#contact"
-            className="px-6 py-3 rounded-full border border-white/20 text-white/80 hover:bg-white/5 transition-colors"
+            className="px-6 py-3 rounded-full border border-foreground/20 text-foreground/80 hover:bg-foreground/5 transition-colors"
           >
             联系我
           </a>

@@ -3,8 +3,8 @@
  * @Date: 2026-08-12 15:03:08
  * @LastEditors: Cqs 18897653566@163.com
  * @LastEditTime: 2026-08-12 15:30:58
- * @Description: 
- * Copyright (c) 2026 by 18897653566@163.com All Rights Reserved. 
+ * @Description:
+ * Copyright (c) 2026 by 18897653566@163.com All Rights Reserved.
  */
 import { useReveal } from '../hooks/useReveal'
 
@@ -30,7 +30,7 @@ export function Contact() {
         <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-fuchsia-400 bg-clip-text text-transparent">
           联系我
         </h2>
-        <p className="text-white/70 mb-12 max-w-xl">
+        <p className="text-foreground/70 mb-12 max-w-xl">
           如果你有任何合作意向或问题，欢迎通过以下方式与我联系。
         </p>
 
@@ -42,10 +42,10 @@ export function Contact() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="block rounded-2xl p-6 bg-white/5 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-colors"
+              className="block rounded-2xl p-6 bg-foreground/5 border border-foreground/10 hover:border-foreground/20 hover:bg-foreground/10 transition-colors"
             >
-              <div className="text-sm text-white/50 mb-1">{item.label}</div>
-              <div className="text-white font-medium break-all">{item.value}</div>
+              <div className="text-sm text-foreground/50 mb-1">{item.label}</div>
+              <div className="text-foreground font-medium break-all">{item.value}</div>
             </a>
           ))}
         </div>

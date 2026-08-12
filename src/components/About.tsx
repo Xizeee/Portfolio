@@ -19,7 +19,7 @@ export function About() {
         </h2>
 
         {/* 详细介绍 */}
-        <p className="text-white/70 leading-relaxed max-w-2xl mb-12">
+        <p className="text-foreground/70 leading-relaxed max-w-2xl mb-12">
           我是一名拥有多年经验的全栈工程师，擅长从前端到后端的完整产品开发。
           喜欢钻研新技术，注重代码质量与用户体验，致力于交付可维护、可扩展的解决方案。
         </p>
@@ -29,14 +29,14 @@ export function About() {
           {skills.map((group) => (
             <div
               key={group.category}
-              className="bg-white/5 rounded-2xl p-6 border border-white/10"
+              className="bg-foreground/5 rounded-2xl p-6 border border-foreground/10"
             >
-              <h3 className="text-lg font-semibold mb-4 text-white">{group.category}</h3>
+              <h3 className="text-lg font-semibold mb-4 text-foreground">{group.category}</h3>
               <ul className="flex flex-wrap gap-2">
                 {group.items.map((item) => (
                   <li
                     key={item}
-                    className="px-3 py-1.5 rounded-full text-sm bg-white/5 text-white/70 border border-white/10"
+                    className="px-3 py-1.5 rounded-full text-sm bg-foreground/5 text-foreground/70 border border-foreground/10"
                   >
                     {item}
                   </li>
