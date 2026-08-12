@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* 主题定制：深色主题 + 渐变强调色（见 AGENTS.md 设计要求） */
+@theme {
+  /* 背景与文字 */
+  --color-background: #0a0a0a;
+  --color-foreground: #ffffff;
+
+  /* 渐变强调色 */
+  --color-accent-from: #6366f1;
+  --color-accent-via: #8b5cf6;
+  --color-accent-to: #a855f7;
+
+  /* 字体 */
+  --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, Consolas, monospace;
+}
+
+/* 全局基础样式 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
